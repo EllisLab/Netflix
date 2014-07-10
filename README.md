@@ -6,7 +6,7 @@ Become a memember of NetFlix, and then look in your browser cookies to discover 
 STEP TWO:
 Insert plugin tag into your template.
 
-## PARAMETERS
+## Parameters
 
 The tag has three parameters:
 
@@ -17,11 +17,11 @@ The tag has three parameters:
 
 Example tag: `{exp:netflix id="P1152183453382851739665891469694171" limit="8" refresh="720"}`.
 
-## SINGLE VARIABLES
+## Single Variables
 
 `{total}` - Total items returned
 
-## PAIR VARIABLES
+## Pair Variables
 
 Only one pair variable, {items}, is available, and it is for the items returned from the NetFlix queue.
 
@@ -34,7 +34,7 @@ This pair variable has the following single variables:
 - `{rating}` - NetFlix's Rating of DVD
 - `{mpaa}` - MPAA Rating of Film
 
-EXAMPLE:
+Example:
 
     {exp:netflix id="P1152183453382851739665891469694171"}
     	<ul>
@@ -44,19 +44,16 @@ EXAMPLE:
     	</ul>
     {/exp:netflix}
 
-NEAT-O: Using the NetFlix movie id you can link to images for the DVDs. Example:
+Using the NetFlix movie id you can link to images for the DVDs. Example:
 
     <img src="http://a408.g.akamai.net/f/408/1284/24h/image.netflix.com/NetFlix_Assets/boxshots/small/{movie_id}.jpg" width="65" height="90" />
 
 I have found that some DVDs when part of a series of discs may not have an image available this way. In these cases NetFlix sends an "Image Not Available" image.
 
+## Change Log
 
-Version 1.1
-====================
-- NetFlix modified their pages, plugin was updated to fix problems because of this.
-- Added MPAA Rating as {mpaa} variable.
-
-Version 1.2
-====================
-- Updated plugin to be 2.0 compatible
-
+- Version 1.2
+	- Updated plugin to be 2.0 compatible
+- Version 1.1
+	- NetFlix modified their pages, plugin was updated to fix problems because of this.
+	- Added MPAA Rating as {mpaa} variable.

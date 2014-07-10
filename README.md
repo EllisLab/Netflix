@@ -52,8 +52,8 @@ I have found that some DVDs when part of a series of discs may not have an image
 
 ## Change Log
 
-- Version 1.2
+- 1.2
 	- Updated plugin to be 2.0 compatible
-- Version 1.1
+- 1.1
 	- NetFlix modified their pages, plugin was updated to fix problems because of this.
 	- Added MPAA Rating as {mpaa} variable.
